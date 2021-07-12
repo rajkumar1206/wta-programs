@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Employee Details</title>
+		<title>Add Employee</title>
 		<style>
 			h3 {
 				color: green;
@@ -35,6 +35,8 @@
       if ($result === TRUE) {
         // output data of each row
         echo "<h2>Data Successfully added</h2>";
+        echo "<h4>Name: $name</h4>";
+        echo "<h4>Salary: $sal</h4>";
       } else {
         echo "<h2>Data Unsuccessfully</h2>";
         echo $conn->error;
@@ -47,8 +49,12 @@
 	<form action="./add-emp.php" method="POST">
 		<label>Enter Employee Name</label>
 		<input type="text" placeholder="Emp Name" name="ename" />
+    <br>
+    <br>
 		<label>Enter Employee Salary</label>
 		<input type="number" placeholder="Emp Sal" name="esal" />
+    <br>
+    <br>
 		<button type="submit">Add Employee Details</button>
 	</form>
 	</body>

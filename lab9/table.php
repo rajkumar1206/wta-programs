@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Arrays</title>
+		<title>Function Table</title>
     <?php
       function persons() {
         return array("Rajkumar"=>"21", "Gal Gadot"=>"37", "Sherlock Holmes"=>"43");
       }
     ?>
+  <style>
+    table, th, td {
+      text-align: left;
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 10px;
+    }
+  </style>
 	</head>
 	<body>
   <h3>Associative Array Contents</h3>
