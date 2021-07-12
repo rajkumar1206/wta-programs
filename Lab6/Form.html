@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Book Information</title>
+		<style>
+			input[type="text"]{
+				position:absolute;
+				left:110px;
+				
+			}
+			.container{
+				border:2px solid black;
+				width:30%;
+				height:250px;
+				position:absolute;
+				left:40%;
+				top:10%;
+			}
+			h2{
+				text-align:center;
+			}
+			.contents{
+				padding:40px;
+				padding-top:10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h2>Book Information</h2>
+			<hr>
+			<div class="contents"> 
+				<form>
+					<label for="author">Author: </label>
+					<input type="text" id="author" name="author"><br><br>
+					<label for="title">Title:</label>
+					<input type="text" id="title" name="title"><br><br>
+					<label for="price">Price: </label>
+					<input type="text" id="price" name="price" ><br><br>
+					<button type="submit">Submit</button>
+					<button type="reset">Reset</button>
+				</form> 
+			</div>
+		</div>
+	</body>
+</html>
